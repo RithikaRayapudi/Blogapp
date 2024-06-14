@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css"; // Ensure the CSS file is correctly imported
+import "./header.css"; 
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { resetState } from "../../redux/slices/userAuthorSlice";
@@ -48,7 +48,7 @@ function Header() {
             ) : (
               <li className="nav-item">
                 <NavLink
-                  className="nav-link"
+                  className="nav-link signout"
                   to="/signin"
                   onClick={signout}
                 >
